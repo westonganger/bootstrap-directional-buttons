@@ -44,4 +44,7 @@ end
 ```
 
 # Credits
-Created by Weston Ganger - @westonganger
+
+Enhanced and Updated by Weston Ganger - @westonganger
+
+Created by Leonid Komarovsky - @shpoont
