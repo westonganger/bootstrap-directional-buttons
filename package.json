@@ -23,11 +23,10 @@
   "homepage": "https://github.com/westonganger/bootstrap-directional-button",
   "devDependencies": {
     "gulp": "*",
-    "gulp-less": "*",
+    "gulp-sass": "*",
     "gulp-autoprefixer": "*",
     "gulp-rename": "*",
     "pump": "*",
-    "del": "*",
-    "bootstrap": "~>3"
+    "del": "*"
   }
 }

@@ -1,12 +1,12 @@
 var gulp = require('gulp'),
-    less = require('gulp-less'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     pump = require('pump'),
     rename = require('gulp-rename'),
     del = require('del');
 
 var paths = {
-  src: './src/*.less',
+  src: './src/*.scss',
   dist: './dist/'
 };
 
@@ -22,7 +22,9 @@ gulp.task('compile', ['clean'], function(cb){
   pump([
     gulp.src(paths.src), 
     
-    less(),
+    sass({
+      errLogToConsole: true
+    }),
 
     autoprefixer({
       browsers: ['> 1%', 'last 3 versions', 'Firefox ESR'],
@@ -33,6 +35,11 @@ gulp.task('compile', ['clean'], function(cb){
 
     rename({
       suffix: '.min'
+    }),
+
+    sass({
+      outputStyle: 'compressed',
+      errLogToConsole: true
     }),
 
     gulp.dest(paths.dist)

@@ -3,3 +3,4 @@ node_modules
 .project
 .settings
 bower_components
+yarn.lock
