@@ -3,7 +3,7 @@ bootstrap-directional-buttons
 
 Arrow-shaped buttons for bootstrap
 
-![Preview](https://raw.githubusercontent.com/shpoont/bootstrap-directional-button/master/preview.png)
+![Preview](https://raw.githubusercontent.com/westonganger/bootstrap-directional-buttons/master/preview.png)
 
 ### Usage:
 Just add class .btn-arrow-left or .btn-arrow-right to bootstrap buttons. Use inside a .btn-group to remove space between button.
