@@ -3,12 +3,6 @@ Bootstrap Directional Buttons
 
 Directional / Arrow buttons for Bootstrap
 
-![Preview](https://raw.githubusercontent.com/westonganger/bootstrap-directional-buttons/master/preview.png)
-
-## Demo: 
-https://jsbin.com/soweca/edit?html,css,output
-
-
 ## Usage:
 Just add class .btn-arrow-left or .btn-arrow-right to bootstrap buttons. Use inside a .btn-group to remove space between button.
 
@@ -17,6 +11,10 @@ Just add class .btn-arrow-left or .btn-arrow-right to bootstrap buttons. Use ins
 <button type="button" class="btn btn-success btn-arrow-right">Right Arrow Button</button>
 ```
 
+## Demo: 
+<a href="https://jsbin.com/soweca/edit?html,css,output" target="_blank">https://jsbin.com/soweca/</a>
+
+![Preview](https://raw.githubusercontent.com/westonganger/bootstrap-directional-buttons/master/preview.png)
 
 ## Install
 
