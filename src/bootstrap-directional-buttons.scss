@@ -1,5 +1,3 @@
-$button-height: 34px;
-$button-corner-square-size: $button-height / 1.414213562373095;
 $button-padding: 18px;
 
 .btn-arrow-right,
@@ -28,8 +26,8 @@ $button-padding: 18px;
   content:"";
   position: absolute;
   top: 4px; /* move it down because of rounded corners */
-  height: $button-corner-square-size; /* button_inner_height / sqrt(2) */
-  width: $button-corner-square-size; /* same as height */
+  height: 22px; /* button_inner_height / sqrt(2) */
+  width: 22px; /* same as height */
   background: inherit; /* use parent background */
   border: inherit; /* use parent border */
   border-left-color: transparent; /* hide left border */
