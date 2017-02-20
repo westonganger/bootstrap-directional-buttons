@@ -6,7 +6,7 @@ Directional / Arrow buttons for Bootstrap
 ![Preview](https://raw.githubusercontent.com/westonganger/bootstrap-directional-buttons/master/preview.png)
 
 ## Demo: 
-http://jsfiddle.net/3cA4x/628/
+http://jsfiddle.net/westonganger/3cA4x/
 
 
 ## Usage:

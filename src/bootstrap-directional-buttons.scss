@@ -1,11 +1,11 @@
 $button-height: 34px;
-$button-corner-square-size: $button-height / 1.41421356237;
+$button-corner-square-size: $button-height / 1.414213562373095;
 $button-padding: 18px;
 
 .btn-arrow-right,
 .btn-arrow-left {
   position: relative;
-  padding-left: $button-padding;
+  padding-left: 18px;
   padding-right: $button-padding;
   border-radius: 0 !important;
   &[disabled] {
@@ -49,12 +49,12 @@ $button-padding: 18px;
 
 .btn-arrow-right:before,
 .btn-arrow-left:before { /* align the "before" square to the left */
-  left: -13px;
+  left: -11px;
 }
 
 .btn-arrow-right:after,
 .btn-arrow-left:after { /* align the "after" square to the right */
-  right: -13px;
+  right: -11px;
 }
 
 .btn-arrow-right:after,
@@ -67,9 +67,12 @@ $button-padding: 18px;
   background-color: white;
 }
 
+.btn-group > .btn.btn-arrow-left{
+  border: none;
+}
+
 .btn-group > .btn.btn-arrow-left, 
 .btn-group > .btn.btn-arrow-right{
-  border: none;
 
   &:hover, &:focus{
     z-index: initial;

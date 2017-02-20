@@ -54,12 +54,12 @@
 .btn-arrow-right:before,
 .btn-arrow-left:before {
   /* align the "before" square to the left */
-  left: -13px; }
+  left: -11px; }
 
 .btn-arrow-right:after,
 .btn-arrow-left:after {
   /* align the "after" square to the right */
-  right: -13px; }
+  right: -11px; }
 
 .btn-arrow-right:after,
 .btn-arrow-left:before {
@@ -71,10 +71,10 @@
   /* hide arrow tails background */
   background-color: white; }
 
-.btn-group > .btn.btn-arrow-left,
-.btn-group > .btn.btn-arrow-right {
+.btn-group > .btn.btn-arrow-left {
   border: none; }
-  .btn-group > .btn.btn-arrow-left:hover, .btn-group > .btn.btn-arrow-left:focus,
-  .btn-group > .btn.btn-arrow-right:hover,
-  .btn-group > .btn.btn-arrow-right:focus {
-    z-index: initial; }
+
+.btn-group > .btn.btn-arrow-left:hover, .btn-group > .btn.btn-arrow-left:focus,
+.btn-group > .btn.btn-arrow-right:hover,
+.btn-group > .btn.btn-arrow-right:focus {
+  z-index: initial; }
