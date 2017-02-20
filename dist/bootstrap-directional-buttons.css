@@ -23,9 +23,9 @@
   position: absolute;
   top: 4px;
   /* move it down because of rounded corners */
-  height: 24.04163px;
+  height: 22px;
   /* button_inner_height / sqrt(2) */
-  width: 24.04163px;
+  width: 22px;
   /* same as height */
   background: inherit;
   /* use parent background */
@@ -71,10 +71,10 @@
   /* hide arrow tails background */
   background-color: white; }
 
-.btn-group > .btn.btn-arrow-left {
+.btn-group > .btn-arrow-left {
   border: none; }
 
-.btn-group > .btn.btn-arrow-left:hover, .btn-group > .btn.btn-arrow-left:focus,
-.btn-group > .btn.btn-arrow-right:hover,
-.btn-group > .btn.btn-arrow-right:focus {
+.btn-group > .btn-arrow-left:hover, .btn-group > .btn-arrow-left:focus,
+.btn-group > .btn-arrow-right:hover,
+.btn-group > .btn-arrow-right:focus {
   z-index: initial; }
