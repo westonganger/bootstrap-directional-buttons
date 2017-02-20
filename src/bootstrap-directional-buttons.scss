@@ -67,12 +67,12 @@ $button-padding: 18px;
   background-color: white;
 }
 
-.btn-group > .btn.btn-arrow-left{
+.btn-group > .btn-arrow-left{
   border: none;
 }
 
-.btn-group > .btn.btn-arrow-left, 
-.btn-group > .btn.btn-arrow-right{
+.btn-group > .btn-arrow-left, 
+.btn-group > .btn-arrow-right{
 
   &:hover, &:focus{
     z-index: initial;
