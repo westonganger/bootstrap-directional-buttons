@@ -12,7 +12,7 @@ Just add class .btn-arrow-left or .btn-arrow-right to bootstrap buttons. Use ins
 ```
 
 ## Demo: 
-<a href="https://jsbin.com/soweca/edit?html,css,output" target="_blank">https://jsbin.com/soweca/edit?html,css,output"</a>
+<a href="https://jsbin.com/soweca/edit?html,css,output" target="_blank">https://jsbin.com/soweca/edit?html,css,output</a>
 
 ![Preview](https://raw.githubusercontent.com/westonganger/bootstrap-directional-buttons/master/preview.png)
 
