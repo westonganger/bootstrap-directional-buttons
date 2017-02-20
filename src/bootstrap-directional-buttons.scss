@@ -1,11 +1,10 @@
-$button-padding: 18px;
-
 .btn-arrow-right,
 .btn-arrow-left {
   position: relative;
   padding-left: 18px;
-  padding-right: $button-padding;
+  padding-right: 18px;
   border-radius: 0 !important;
+  margin-right: 1px;
   
   &[disabled] {
     opacity: 1.00;
@@ -31,21 +30,21 @@ $button-padding: 18px;
   &:after{
     right: -13px;
   }
-}
 
-.btn-arrow-right {
-  padding-left: $button-padding * 2;
+  &.btn-arrow-left{
+    padding-right: 36px;
 
-  &:before, &:after{
-    transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    &:before, &:after{
+      transform: rotate(225deg); /* rotate right arrow squares 45 deg to point right */
+    }
   }
-}
 
-.btn-arrow-left {
-  padding-right: $button-padding * 2;
+  &.btn-arrow-right{
+    padding-left: 36px;
 
-  &:before, &:after{
-    transform: rotate(225deg); /* rotate left arrow squares 225 deg to point left */
+    &:before, &:after{
+      transform: rotate(45deg); /* rotate right arrow squares 45 deg to point right */
+    }
   }
 }
 
@@ -59,6 +58,104 @@ $button-padding: 18px;
   background-color: white;
 }
 
+
+/* Large */
+.btn-lg.btn-arrow-right,
+.btn-lg.btn-arrow-left,
+.btn-group-lg > .btn-arrow-left,
+.btn-group-lg > .btn-arrow-right{
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-right: 0px;
+
+  &:before, &:after{
+    top: 6px; /* move it down because of rounded corners */
+    height: 32px; /* button_inner_height / sqrt(2) */
+    width: 32px; /* same as height */
+  }
+
+  &:before{
+    left: -16px;
+  }
+
+  &:after{
+    right: -16px;
+  }
+
+  &.btn-arrow-left{
+    padding-right: 44px;
+  }
+
+  &.btn-arrow-right{
+    padding-left: 44px;
+  }
+}
+
+/* Small */
+.btn-sm.btn-arrow-right,
+.btn-sm.btn-arrow-left,
+.btn-group-sm > .btn-arrow-left,
+.btn-group-sm > .btn-arrow-right{
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-right:-1px;
+
+  &:before, &:after{
+    top: 4px; /* move it down because of rounded corners */
+    height: 20px; /* button_inner_height / sqrt(2) */
+    width: 20px; /* same as height */
+  }
+
+  &:before{
+    left: -10px;
+  }
+
+  &:after{
+    right: -10px;
+  }
+
+  &.btn-arrow-left{
+    padding-right: 28px;
+  }
+
+  &.btn-arrow-right{
+    padding-left: 28px;
+  }
+}
+
+/* Extra Small */
+.btn-xs.btn-arrow-right,
+.btn-xs.btn-arrow-left,
+.btn-group-xs > .btn-arrow-left,
+.btn-group-xs > .btn-arrow-right{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: -1px;
+
+  &:before, &:after{
+    top: 3px; /* move it down because of rounded corners */
+    height: 14px; /* button_inner_height / sqrt(2) */
+    width: 14px; /* same as height */
+  }
+
+  &:before{
+    left: -7px;
+  }
+
+  &:after{
+    right: -7px;
+  }
+
+  &.btn-arrow-left{
+    padding-right: 20px;
+  }
+
+  &.btn-arrow-right{
+    padding-left: 20px;
+  }
+}
+
+/* Button Groups */
 .btn-group > .btn-arrow-left, 
 .btn-group > .btn-arrow-right{
   &:hover, &:focus{
@@ -66,6 +163,11 @@ $button-padding: 18px;
   }
 }
 
-.btn-group .btn.btn-arrow-right+.btn.btn-arrow-right{
-  margin-left: 1px;
+.btn-group > .btn-arrow-right+.btn-arrow-right,
+.btn-group > .btn-arrow-left+.btn-arrow-left{
+  margin-left: 0px;
+}
+
+.btn-group > .btn:not(.btn-arrow-right):not(.btn-arrow-left){
+  z-index: 1;
 }
